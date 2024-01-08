@@ -60,7 +60,7 @@ jobs:
           tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
           context-github: ${{ toJSON(github) }}
           job-name: 'Register Artifact'
-          artifacts: '[{"name": "app-devops.jar","version": "1.${{ github.run_number }}","semanticVersion": "1.${{ github.run_number }}.0","repositoryName": "${{ github.repository }}"}]'
+          artifacts: '[{"name": "chone-app-devops.jar","version": "20.${{ github.run_number }}","semanticVersion": "20.${{ github.run_number }}.0","repositoryName": "${{ github.repository }}"}]'
  
   registerpackage:
     name: Register Package
@@ -75,8 +75,8 @@ jobs:
           tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
           context-github: ${{ toJSON(github) }}
           job-name: 'Register Package'
-          artifacts: '[{"name": "app-devops.jar","version": "1.${{ github.run_number }}","semanticVersion": "1.${{ github.run_number }}.0","repositoryName": "${{ github.repository }}"}]'
-          package-name: 'app-devops-change-velocity.war'
+          artifacts: '[{"name": "chone-app-devops.jar","version": "20.${{ github.run_number }}","semanticVersion": "20.${{ github.run_number }}.0","repositoryName": "${{ github.repository }}"}]'
+          package-name: 'chone-app-devops-change-velocity.war'
 
 
   changereq:
